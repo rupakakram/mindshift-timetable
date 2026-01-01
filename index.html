@@ -154,6 +154,61 @@ footer p {
   line-height: 1.6;
 }
 
+/* --- Mobile & tablet responsive adjustments --- */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  .subjects {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .subject {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+
+  .timetable {
+    width: 100%;
+    font-size: 0.8rem;
+    overflow-x: auto;
+    display: block;
+  }
+
+  .timetable th,
+  .timetable td {
+    min-width: 80px;
+    padding: 6px;
+  }
+
+  .drop-zone {
+    height: 50px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  button {
+    width: 90%;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -246,5 +301,6 @@ footer p {
       OTH Amberg-Weiden
     </p>
   </footer> 
+  <script src="https://cdn.jsdelivr.net/npm/dragdroptouch@1.2.0/DragDropTouch.min.js"></script>
 </body>
 </html>
